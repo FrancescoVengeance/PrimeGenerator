@@ -15,7 +15,7 @@ public class PrimeFinder
 			if(n % i == 0) return false;
 		}
 		
-		return false;
+		return true;
 	}
 	
 	public ArrayList<Integer> getPrimes(Integer n)
