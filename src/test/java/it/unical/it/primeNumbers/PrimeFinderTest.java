@@ -30,7 +30,12 @@ public class PrimeFinderTest
 		int n = 30;
 		
 		assertEquals(null, finder.getPrimes(0));
-		assertEquals(null, finder.getPrimes(0));
+		assertEquals(null, finder.getPrimes(1));
+		assertTrue(finder.isPrime(2));
+		assertFalse(finder.isPrime(4));
+		assertFalse(finder.isPrime(6));
+		assertFalse(finder.isPrime(40));
+		assertFalse(finder.isPrime(45));
 		
 		assertTrue(finder.isPrime(7));
 		assertTrue(finder.isPrime(97));
