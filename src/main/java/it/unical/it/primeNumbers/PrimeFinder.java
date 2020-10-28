@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class PrimeFinder 
 {
-	private boolean isPrime(Integer n)
+	public boolean isPrime(Integer n)
 	{
 		for(int i = 2; i <= Math.sqrt(n); i++)
 		{
@@ -39,7 +39,7 @@ public class PrimeFinder
     {
         PrimeFinder finder = new PrimeFinder();
         
-        Integer n = 10;
+        Integer n = 30;
         ArrayList<Integer> primes = finder.getPrimes(n);
         
         if(primes == null)
@@ -53,7 +53,5 @@ public class PrimeFinder
             	System.out.println(i);
             }
         }
-        
-        
     }
 }
