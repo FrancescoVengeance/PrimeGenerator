@@ -2,10 +2,6 @@ package it.unical.it.primeNumbers;
 
 import java.util.ArrayList;
 
-/**
- * Hello world!
- *
- */
 public class PrimeFinder 
 {
 	public boolean isPrime(Integer n)
@@ -34,24 +30,4 @@ public class PrimeFinder
 		
 		return primes;
 	}
-	
-    public static void main( String[] args )
-    {
-        PrimeFinder finder = new PrimeFinder();
-        
-        Integer n = 30;
-        ArrayList<Integer> primes = finder.getPrimes(n);
-        
-        if(primes == null)
-        {
-        	System.out.println("Non ci sono primi");
-        }
-        else
-        {
-        	for(Integer i : primes)
-            {
-            	System.out.println(i);
-            }
-        }
-    }
 }
