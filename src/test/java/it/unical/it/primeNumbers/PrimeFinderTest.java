@@ -3,12 +3,7 @@ package it.unical.it.primeNumbers;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -34,9 +29,7 @@ public class PrimeFinderTest
 	
 	@Test
 	public void devonoEsserePrimi()
-	{
-		int n = 30;
-		
+	{	
 		assertTrue(finder.isPrime(2));
 		assertFalse(finder.isPrime(4));
 		assertFalse(finder.isPrime(6));
